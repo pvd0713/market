@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+    <meta charset="utf-8" />
+    <meta
+      name="csrf-token"
+      content="LW6RrHcOGefANTZ5bKVRNDC701ky7J8sdblGXkHh"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-title" content="marketplace" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="http://helperbook.shop/storage/app/default/ico/apple-touch-icon-144-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="http://helperbook.shop/storage/app/default/ico/apple-touch-icon-114-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="http://helperbook.shop/storage/app/default/ico/apple-touch-icon-72-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="http://helperbook.shop/storage/app/default/ico/apple-touch-icon-57-precomposed.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="http://helperbook.shop/storage/app/default/ico/favicon.png"
+    />
+    <title>Test testtesttest, Moscow</title>
+    <meta
+      name="description"
+      property="description"
+      content="Test TestTestTestTestTest"
+    />
+    <meta name="keywords" property="keywords" content="" />
+
+    <link rel="canonical" href="http://helperbook.shop/test-testtesttest/1" />
+
+    <base target="_top" />
+    <meta property="og:site_name" content="marketplace" />
+    <meta property="og:locale" content="ru" />
+    <meta
+      property="og:url"
+      content="http://helperbook.shop/test-testtesttest/1"
+    />
+    <meta property="og:title" content="Test testtesttest, Moscow" />
+    <meta property="og:description" content="Test TestTestTestTestTest" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:image"
+      content="http://helperbook.shop/storage/files/ru/1/thumb-816x460-5795836f151bc90eb4cb81e6e665d16b.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Test testtesttest, Moscow" />
+    <meta name="twitter:description" content="Test TestTestTestTestTest" />
+    <meta name="twitter:domain" content="helperbook.shop" />
+
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      href="http://helperbook.shop/feed"
+      title="My feed"
+    />
+
+    <link
+      href="http://helperbook.shop/css/app.css?id=2b47cdfe9c9843d6d227"
+      rel="stylesheet"
+    />
+
+    <link href="http://helperbook.shop/common/css/style.css" rel="stylesheet" />
+
+    <link href="http://helperbook.shop/css/custom.css" rel="stylesheet" />
+
+    <link
+      href="http://helperbook.shop/assets/plugins/swipebox/1.5.2/css/swipebox.css"
+      rel="stylesheet"
+    />
+    <link
+      href="http://helperbook.shop/assets/plugins/swiper/7.4.1/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="http://helperbook.shop/assets/plugins/swiper/7.4.1/swiper-horizontal-thumbs.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+
+    <script>
+      paceOptions = {
+        elements: true,
+      };
+    </script>
+    <script src="http://helperbook.shop/assets/plugins/pace/0.4.17/pace.min.js"></script>
+    <script src="http://helperbook.shop/assets/plugins/modernizr/modernizr-custom.js"></script>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//storage.googleapis.com" />
+    <link rel="dns-prefetch" href="//graph.facebook.com" />
+    <link rel="dns-prefetch" href="//google.com" />
+    <link rel="dns-prefetch" href="//apis.google.com" />
+    <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+    <link rel="dns-prefetch" href="//gstatic.com" />
+    <link rel="dns-prefetch" href="//cdn.api.twitter.com" />
+    <link rel="dns-prefetch" href="//oss.maxcdn.com" />
+    <link rel="dns-prefetch" href="//cloudflare.com" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      var siteUrl = "http://helperbook.shop";
+      var languageCode = "ru";
+      var isLogged = false;
+      var isLoggedAdmin = false;
+      var isAdminPanel = false;
+      var demoMode = false;
+      var demoMessage = "Эта функция отключена в демонстрационном режиме.";
+
+      var cookieParams = {
+        expires: 1440,
+        path: "/",
+        domain: "helperbook.shop",
+        secure: false,
+        sameSite: "lax",
+      };
+
+      var langLayout = {
+        confirm: {
+          button: {
+            yes: "да",
+            no: "Нет",
+            ok: "В ПОРЯДКЕ",
+            cancel: "Отмена",
+          },
+          message: {
+            question: "Вы уверены, что хотите выполнить это действие?",
+            success: "Операция прошла успешно.",
+            error: "Произошла ошибка при выполнении действия.",
+            errorAbort:
+              "Произошла ошибка при выполнении действия. Операция не проводилась.",
+            cancel: "Действие отменено. Операция не проводилась.",
+          },
+        },
+      };
+    </script>
+    <script>
+      var countryCode = "RU";
+      var timerNewMessagesChecking = 60000;
+
+      /* Complete langLayout translations */
+      langLayout.hideMaxListItems = {
+        moreText: "Смотреть больше",
+        lessText: "Смотреть меньше",
+      };
+      langLayout.select2 = {
+        errorLoading: function () {
+          return "Результаты не могут быть загружены.";
+        },
+        inputTooLong: function (e) {
+          var t = e.input.length - e.maximum,
+            n = "Пожалуйста удалите " + t + " символы";
+          return t != 1 && (n += "s"), n;
+        },
+        inputTooShort: function (e) {
+          var t = e.minimum - e.input.length,
+            n = "Пожалуйста введите " + t + " или больше символов";
+          return n;
+        },
+        loadingMore: function () {
+          return "Загрузка других результатов…";
+        },
+        maximumSelected: function (e) {
+          var t = "Вы можете выбрать только " + максимум + " предметов";
+          return e.maximum != 1 && (t += "s"), t;
+        },
+        noResults: function () {
+          return "Результатов не найдено";
+        },
+        searching: function () {
+          return "Поиск…";
+        },
+      };
+      var loadingWd = "Загрузка...";
+
+      var defaultAuthField = "email";
+      var phoneCountry = "RU";
+
+      var fakeLocationsResults = "0";
+      var stateOrRegionKeyword = "Местность:";
+      var errorText = {
+        errorFound: "Обнаружена ошибка",
+      };
+      var refreshBtnText = "Обновить";
+    </script>
+
+    <script>
+      var showSecurityTips = "0";
+    </script>
+
+    <script src="http://helperbook.shop/common/js/intl-tel-input/countries.js"></script>
+    <script src="http://helperbook.shop/js/app.js?id=5d393bf80be1e3f06f27"></script>
+    <script src="http://helperbook.shop/assets/plugins/select2/js/i18n/ru.js"></script>
+    <script>
+      $(document).ready(function () {
+        let largeDataSelect2Params = {
+          width: "100%",
+          dropdownAutoWidth: "true",
+        };
+
+        let select2Params = { ...largeDataSelect2Params };
+
+        select2Params.minimumResultsForSearch = Infinity;
+
+        if (
+          typeof langLayout !== "undefined" &&
+          typeof langLayout.select2 !== "undefined"
+        ) {
+          select2Params.language = langLayout.select2;
+          largeDataSelect2Params.language = langLayout.select2;
+        }
+
+        $(".selecter").select2(select2Params);
+        $(".large-data-selecter").select2(largeDataSelect2Params);
+
+        $(".share").ShareLink({
+          title: "Test testtesttest, Moscow",
+          text: "Test testtesttest, Moscow",
+          url: "http://helperbook.shop/test-testtesttest/1",
+          width: 640,
+          height: 480,
+        });
+      });
+    </script>
+
+    <script>
+      var lang = {
+        labelSavePostSave: "Сохранить объявление",
+        labelSavePostRemove: "Удалить из избранного",
+        loginToSavePost: "Пожалуйста, войдите, чтобы сохранить объявления.",
+        loginToSaveSearch:
+          "Пожалуйста, войдите, чтобы сохранить результаты поиска.",
+      };
+
+      $(document).ready(function () {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[rel="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        $('button[data-bs-toggle="tab"]').on("shown.bs.tab", function (e) {
+          /* save the latest tab; use cookies if you like 'em better: */
+          /* localStorage.setItem('lastTab', $(this).attr('href')); */
+          localStorage.setItem("lastTab", $(this).attr("data-bs-target"));
+        });
+
+        let lastTab = localStorage.getItem("lastTab");
+        if (lastTab) {
+          let triggerEl = document.querySelector(
+            'button[data-bs-target="' + lastTab + '"]'
+          );
+          if (typeof triggerEl !== "undefined" && triggerEl !== null) {
+            let tabObj = new bootstrap.Tab(triggerEl);
+            if (tabObj !== null) {
+              tabObj.show();
+            }
+          }
+        }
+      });
+    </script>
+    <script>
+      let rtlIsEnabled = false;
+      if ($("html").attr("dir") === "rtl") {
+        rtlIsEnabled = true;
+      }
+
+      let carouselItems = 0;
+      let carouselAutoplay = false;
+      let carouselAutoplayTimeout = 1500;
+      let carouselLang = {
+        navText: {
+          prev: "предыдущая",
+          next: "следующий",
+        },
+      };
+
+      let carouselObject = $(".featured-list-slider._jYPVzE");
+      let responsiveObject = {
+        0: {
+          items: 1,
+          nav: true,
+        },
+        576: {
+          items: 2,
+          nav: false,
+        },
+        768: {
+          items: 3,
+          nav: false,
+        },
+        992: {
+          items: 5,
+          nav: false,
+          loop: carouselItems > 5,
+        },
+      };
+      carouselObject.owlCarousel({
+        rtl: rtlIsEnabled,
+        nav: false,
+        navText: [carouselLang.navText.prev, carouselLang.navText.next],
+        loop: true,
+        responsiveClass: true,
+        responsive: responsiveObject,
+        autoWidth: true,
+        autoplay: carouselAutoplay,
+        autoplayTimeout: carouselAutoplayTimeout,
+        autoplayHoverPause: true,
+      });
+    </script>
+    <script src="http://helperbook.shop/assets/plugins/swipebox/1.5.2/js/jquery.swipebox.js"></script>
+    <script>
+      $(document).ready(function () {
+        let documentBody = $(document.body);
+
+        documentBody.on(
+          "click touchend",
+          "#swipebox-slider .current img",
+          function () {
+            let clickedEl = $(this).get(0);
+            if (clickedEl === undefined || clickedEl.nodeName === undefined) {
+              return false;
+            }
+
+            if (strToLower(clickedEl.nodeName) === "img") {
+              $("#swipebox-next").click();
+            }
+
+            return false;
+          }
+        );
+
+        documentBody.on(
+          "click touchend",
+          "#swipebox-slider .current",
+          function () {
+            let clickedEl = $(this).get(0);
+            if (clickedEl === undefined || clickedEl.nodeName === undefined) {
+              return false;
+            }
+
+            if (strToLower(clickedEl.nodeName) !== "img") {
+              $("#swipebox-close").click();
+            }
+          }
+        );
+      });
+
+      /**
+       * Get the swipebox items
+       *
+       * @param imgSrcArray
+       * @param title
+       * @returns {*}
+       */
+      function formatImgSrcArrayForSwipebox(imgSrcArray, title = "Title") {
+        return map(imgSrcArray, function (imgSrc, index) {
+          return { href: imgSrc, title: title };
+        });
+      }
+
+      /**
+       * Get full size src of all pictures
+       *
+       * @param wrapperSelector
+       * @param currentSrc
+       * @returns {*[]}
+       */
+      function getFullSizeSrcOfAllImg(wrapperSelector, currentSrc) {
+        let allEl = document.querySelectorAll(wrapperSelector);
+
+        let imgSrcArray = [getFullSizeSrc(currentSrc)];
+
+        forEach(allEl, function (el, index) {
+          if (el.src !== currentSrc) {
+            imgSrcArray.push(getFullSizeSrc(el.src));
+          }
+        });
+
+        return imgSrcArray;
+      }
+
+      /**
+       * Get the current picture's full size source
+       *
+       * @param imgSrc
+       * @returns {*}
+       */
+      function getFullSizeSrc(imgSrc) {
+        let regex = /thumb-(\d+)x(\d+)-/i;
+
+        return imgSrc.replace(regex, "");
+      }
+    </script>
+    <script src="http://helperbook.shop/assets/plugins/swiper/7.4.1/swiper-bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let thumbsGalleryOptions = {
+          slidesPerView: 2,
+          spaceBetween: 5,
+          freeMode: true,
+          watchSlidesProgress: true,
+          /* Responsive breakpoints */
+          breakpoints: {
+            /* when window width is >= 320px */
+            320: {
+              slidesPerView: 3,
+            },
+            /* when window width is >= 576px */
+            576: {
+              slidesPerView: 4,
+            },
+            /* when window width is >= 768px */
+            768: {
+              slidesPerView: 5,
+            },
+            /* when window width is >= 992px */
+            992: {
+              slidesPerView: 6,
+            },
+          },
+          centerInsufficientSlides: true,
+          direction: "horizontal",
+        };
+        let thumbsGallery = new Swiper(".thumbs-gallery", thumbsGalleryOptions);
+
+        let mainGalleryOptions = {
+          speed: 300,
+          loop: true,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: thumbsGallery,
+          },
+          autoHeight: true,
+          grabCursor: true,
+        };
+        let mainGallery = new Swiper(".main-gallery", mainGalleryOptions);
+
+        mainGallery.on("click", function (swiper, event) {
+          /* console.log(swiper); */
+          if (typeof swiper.clickedSlide === "undefined") {
+            return false;
+          }
+
+          let imgEl = swiper.clickedSlide.querySelector("img");
+          if (
+            typeof imgEl === "undefined" ||
+            typeof imgEl.src === "undefined"
+          ) {
+            return false;
+          }
+
+          let currentSrc = imgEl.src;
+          let imgTitle = "Test testtesttest";
+
+          let wrapperSelector =
+            ".main-gallery .swiper-slide:not(.swiper-slide-duplicate) img:not(.default-picture)";
+          let imgSrcArray = getFullSizeSrcOfAllImg(wrapperSelector, currentSrc);
+          if (imgSrcArray === undefined || imgSrcArray.length === 0) {
+            return false;
+          }
+
+          let swipeboxItems = formatImgSrcArrayForSwipebox(
+            imgSrcArray,
+            imgTitle
+          );
+          let swipeboxOptions = {
+            hideBarsDelay: 1000 * 60 * 5,
+            loopAtEnd: false,
+          };
+          $.swipebox(swipeboxItems, swipeboxOptions);
+        });
+      });
+    </script>
+  </body>
+</html>
